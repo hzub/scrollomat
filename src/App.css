@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  flex: 0 0 50px;
+}
+
+.content {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.section {
+  position: absolute;
+  width: 33%;
+  height: 100%;
+  background-color: #ccc;
+  top: 0;
+  transition: transform 0.15s linear;
+}
+
+.section-left {
+  left: 0;
+}
+
+.section-center {
+  left: 33%;
+}
+
+.section-right {
+  left: 66%;
+}
+
+.section-scroll-below {
+  transform: translate(0, 100%);
+}
+
+.section-scroll-above {
+  transform: translate(0, -100%);
+}
+
+.section-scroll-inside {
+  transform: translate(0, 0);
+}
